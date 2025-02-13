@@ -1,8 +1,10 @@
+import PageWrapper from "@/components/wrapper/page-wrapper";
+
 const AppLayout = ({ children }: { children: React.ReactNode }) => {
     return (
-        <div>
+        <PageWrapper>
             {children}
-        </div>
+        </PageWrapper>
     )
 }
 export default AppLayout;

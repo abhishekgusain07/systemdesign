@@ -1,9 +1,12 @@
+import PageWrapper from "@/components/wrapper/page-wrapper";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+      <PageWrapper>
+        <div className="mt-3 p-4">
+          Home
+        </div>
+      </PageWrapper>
   );
 }
