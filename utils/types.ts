@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { InferSelectModel, InferInsertModel } from "drizzle-orm";
-import { users } from "@/db/schema";
+import { posts, users } from "@/db/schema";
 export type userCreateProps = z.infer<typeof userCreateSchema>;
 
 const userCreateSchema = z.object({
@@ -53,3 +53,7 @@ const userUpdateSchema = z.object({
 // Infer the types directly from the schema
 export type User = InferSelectModel<typeof users>;
 export type NewUser = InferInsertModel<typeof users>;
+
+export type Post = InferSelectModel<typeof posts>;
+export type newPost = InferInsertModel<typeof posts>;
+

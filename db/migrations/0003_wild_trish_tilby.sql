@@ -1,0 +1,1 @@
+CREATE TYPE "public"."entity_type" AS ENUM('post', 'comment');
